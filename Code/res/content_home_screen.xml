@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.architha.myapplication.home_screen"
+    tools:showIn="@layout/activity_home_screen">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="280dp"
+        android:id="@+id/blogout"
+        android:textColor="#FF0000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CURRENCY CONVERTER"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0000FF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="(EURO TO INDIAN CURRENCY)"
+        android:textColor="#A52A2A"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="EUROS"
+        android:id="@+id/textView3"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/etEUROS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etEUROS"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/blogout"
+        android:layout_alignEnd="@+id/blogout"
+        android:layout_above="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="INR"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_marginTop="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignRight="@+id/etEUROS"
+        android:layout_alignEnd="@+id/etEUROS"
+        android:id="@+id/etRup" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONVERT"
+        android:id="@+id/conButton"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp" />
+
+
+
+</LinearLayout>
+
