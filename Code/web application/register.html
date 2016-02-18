@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRATION</title>
+    <script>
+        function register()
+        {
+            if(document.getElementById('username').value.length>0 && document.getElementById('email id').value.length>0 &&
+                    document.getElementById('password').value.length>0 &&
+                    ( document.getElementById('confPwd').value ==document.getElementById('password').value))
+            {
+                localStorage.setItem('UserName',(document.getElementById('username').value));
+                localStorage.setItem('Password',(document.getElementById('password').value));
+                window.location.href='login.html';
+            }
+            else
+            {
+                alert('Missing credentials');
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-color: #794044;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <p>
+            <img src="img.jpg" align="center" style="padding-top: 60px">
+        </p>
+
+<table align="center" style="padding-top: 25px">
+    <tr>
+        <th>
+            USERNAME
+        </th>
+        <td><input type="text" id="username" placeholder="UserName"/></td>
+    </tr>
+    <tr>
+        <th>
+            EMAIL ID
+        </th>
+        <td><input type="text" id="email id" placeholder="EMAIL"/></td>
+    </tr>
+    <th>
+        PASSWORD  </th><td> <input type="password" id="password" placeholder="Password" /></td>
+    <tr>
+        <th>
+            CONFORM PASSWORD </th> <td>  <input type="password" id="confPwd" placeholder="Re-Enter Password"  /> </td>
+    </tr>
+</table>
+ <br/>
+
+<input type="button" id="register" value="REGISTER" align="center" onclick="register()"/>
+
+</div>
+
+</body>
+</html>

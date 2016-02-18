@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <script>
+        function register()
+        {
+            window.location.href='register.html';
+        }
+        function login()
+        {
+            if(document.getElementById('username').value.length>0 && document.getElementById('password').value.length>0)
+            {
+                    if(document.getElementById('username').value==localStorage.getItem('UserName')
+                            && document.getElementById('password').value==localStorage.getItem('Password'))
+                    {
+                        window.location.href='home.html';
+                    }
+                else
+                    {
+                        alert('Enter correct details');
+                    }
+
+            }
+            else
+            {
+                alert('Missing credentials');
+            }
+        }
+    </script>
+    <style>
+        body
+        {
+            background-color:#794044;
+        }
+    </style>
+    <h1 align="center" style="padding-top: 80px">LOGIN</h1>
+    </head>
+    <div align="center" style="padding-top: 20px">
+        <input type="text" id="username" placeholder="UserName" align="vertical"/><br/>
+        <br/>
+        <input type="password" id="password" placeholder="Password"/><br/>
+        <br/>
+        <br/>
+        <input type="button" id="login" value="LOGIN" align="center" onclick="login()"/>
+        <input type="button" id="register" value="REGISTER" align="center" onclick="register()"/>
+        <br/>
+     <p>
+         <img src="login.jpg">
+     </p>
+    </div>
+</body>
+</html>
