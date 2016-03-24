@@ -1,0 +1,16 @@
+<ion-view view-title="                                                  Conversion Is:!!      " ng-app="starter" ng-controller="getconversion">
+   <ion-nav-bar class="bar-stable"></ion-nav-bar>
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-camera" ng-click="upload()"></button>
+    </ion-nav-buttons>
+<ion-content>
+    <div class="list card" ng-if="f">
+          <div class="item item-image">
+            <img ng-src="{{f}}" width="100%">
+          </div>
+        </div>
+    <p>{{x}}</p>
+<p>{{desc}}</p>
+<p>{{placeid}}</p>    
+</ion-content>
+</ion-view>
